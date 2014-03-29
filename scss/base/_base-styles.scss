@@ -1,0 +1,58 @@
+/**
+ * Reset some of the boilerplate and Normalize values
+ * so that it is easy to keep boilerplate and Normalize
+ * up to date.
+ */
+
+html{
+    //@include font-size(36px);
+    font-size: 100%;
+    line-height: 1.6;
+}
+html,
+button,
+input,
+select,
+textarea { 
+    font-family: $font-serif;
+}
+body {
+    // Put the name of the media query :after the body
+    // then read it with JavaScript
+    &:after {
+        display: none;
+    }
+    @include breakpoint(min-s) {
+        &:after {
+            content: "S";
+        }
+    }
+    @include breakpoint(min-m) {
+        &:after {
+            content: "M";
+        }
+    }
+    @include breakpoint(min-l) {
+        &:after {
+            content: "L";
+        }
+    }
+    @include breakpoint(min-xl) {
+        &:after {
+            content: "XL";
+        }
+    }
+    @include font-size(30px);
+}
+
+/**
+ * Single directional margins thing
+ * http://csswizardry.com/2012/06/single-direction-margin-declarations/
+ */
+
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dd,
+p, figure,
+pre, table, fieldset, hr, div, blockquote {
+    margin: 0 0 $omni-value 0;
+}

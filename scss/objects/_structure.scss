@@ -1,0 +1,38 @@
+/**
+ * Reusable structure related classes
+ */
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+.display-inline {
+    display: inline;
+}
+.margin-l-20 {
+    margin-left: 20px;
+}
+.margin-b-20 {
+    margin-bottom: 20px;
+}
+.margin-r-l-20 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.border-0 {
+    border-width: 0;
+}
+
+/**
+ * Main block
+ */
+
+.wrap {
+    @include breakpoint(min-xxl) {
+        width: 1660px;
+    }
+    margin: 0;
+    max-width: 100%;
+}

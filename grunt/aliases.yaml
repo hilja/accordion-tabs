@@ -1,0 +1,12 @@
+# This file is made possible by the load-grunt-config task
+# https://www.npmjs.org/package/load-grunt-config
+# the `:newer` is from the grunt-newer task
+default:
+    - 'newer:sass'
+    - 'newer:autoprefixer'
+    - 'newer:concat'
+    - 'newer:jshint'
+    - 'newer:uglify'
+    - 'newer:imageoptim'
+    # - 'usebanner'
+    # - 'livereload'

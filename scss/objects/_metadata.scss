@@ -1,0 +1,14 @@
+time {
+    @include font-size(12px);
+    color: $color-grey;
+    font-family: $font-monospace;
+    line-height: 1;
+}
+.note {
+    background: $color-yellow-light;
+    //border: 1px solid darken($color-yellow, 5);
+    border-radius: 3px;
+    font-family: $font-sans-serif;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}

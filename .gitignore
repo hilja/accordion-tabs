@@ -1,1 +1,12 @@
+bower_components
+node_modules
+dist
+.idea
+.tmp
 .sass-cache
+.rvmrc
+trash
+.trashes
+Error.log
+*.sublime-project
+*.subline-workspace
