@@ -26,6 +26,14 @@ $ grunt watch
 
 And spin up server using [http-server][1] (install it globally first):
 
+And then watch it:
+
+```
+$ grunt watch
+```
+
+And spin up server using [http-server][1] (install it globally first):
+
 ```
 $ http-server
 ```
