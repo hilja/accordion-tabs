@@ -2,11 +2,11 @@
 # https://www.npmjs.org/package/load-grunt-config
 # the `:newer` is from the grunt-newer task
 default:
+    - 'bower'
+    - 'rename'
     - 'newer:sass'
     - 'newer:autoprefixer'
     - 'newer:concat'
     - 'newer:jshint'
     - 'newer:uglify'
     - 'newer:imageoptim'
-    - 'bower'
-    - 'rename'
