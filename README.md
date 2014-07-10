@@ -28,9 +28,20 @@ Then run:
 ```
 $ npm install
 $ bower install
+$ grunt
 ```
 
-Theres no http server here, I've been using the [http-server][1], it's installed globally. Then just run `$ http-server` from the project dir.
+And then watch it:
+
+```
+$ grunt watch
+```
+
+And spin up server using [http-server][1] (install it globally first):
+
+```
+$ http-server
+```
 
 [1]: https://www.npmjs.org/package/http-server 
 [2]: https://sublime.wbond.net/packages/Nettuts%2B%20Fetch
