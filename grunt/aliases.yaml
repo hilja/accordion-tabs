@@ -8,3 +8,5 @@ default:
     - 'newer:jshint'
     - 'newer:uglify'
     - 'newer:imageoptim'
+    - 'bower'
+    - 'rename'

@@ -25,6 +25,7 @@
     "grunt-svg2png": "^0.2.5",
     "grunt-notify": "^0.3.0",
     "time-grunt": "^0.3.2",
-    "jshint-stylish": "^0.2.0"
+    "jshint-stylish": "^0.2.0",
+    "grunt-rename": "^0.1.3"
   }
 }
