@@ -4,45 +4,49 @@
  * up to date.
  */
 
-html{
-    //@include font-size(36px);
-    font-size: 100%;
+html {
+//    font-size: 100%;
     line-height: 1.6;
 }
+
 html,
 button,
 input,
 select,
 textarea { 
-    font-family: $font-serif;
+    font-family: $font-sans-serif;
 }
+
 body {
     // Put the name of the media query :after the body
     // then read it with JavaScript
     &:after {
         display: none;
     }
+    
     @include breakpoint(min-s) {
         &:after {
-            content: "S";
+            content: 's';
         }
     }
+    
     @include breakpoint(min-m) {
         &:after {
-            content: "M";
+            content: 'm';
         }
     }
+
     @include breakpoint(min-l) {
         &:after {
-            content: "L";
+            content: 'l';
         }
     }
+    
     @include breakpoint(min-xl) {
         &:after {
-            content: "XL";
+            content: 'xl';
         }
     }
-    @include font-size(30px);
 }
 
 /**
@@ -50,9 +54,23 @@ body {
  * http://csswizardry.com/2012/06/single-direction-margin-declarations/
  */
 
-h1, h2, h3, h4, h5, h6, hgroup,
-ul, ol, dd,
-p, figure,
-pre, table, fieldset, hr, div, blockquote {
-    margin: 0 0 $omni-value 0;
+blockquote,
+dd,
+div,
+fieldset,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+hr,
+ol,
+p,
+pre,
+table,
+ul {
+    margin: 0 0 $omni-value;
 }

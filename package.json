@@ -14,12 +14,17 @@
     "load-grunt-tasks": "~0.3.0",
     "grunt-sass": "^0.11.0",
     "node-bourbon": "~1.0.0",
+    "grunt-bower-task": "^0.3.4",
     "grunt-csso": "~0.5.3",
     "load-grunt-config": "~0.7.1",
     "grunt-imageoptim": "~1.4.1",
     "grunt-newer": "~0.6.1",
     "grunt-banner": "~0.2.1",
     "node-neat": "^1.1.0",
-    "grunt-svgmin": "^0.4.0"
+    "grunt-svgmin": "^0.4.0",
+    "grunt-svg2png": "^0.2.5",
+    "grunt-notify": "^0.3.0",
+    "time-grunt": "^0.3.2",
+    "jshint-stylish": "^0.2.0"
   }
 }

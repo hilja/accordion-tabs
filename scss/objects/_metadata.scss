@@ -4,11 +4,11 @@ time {
     font-family: $font-monospace;
     line-height: 1;
 }
+
 .note {
     background: $color-yellow-light;
-    //border: 1px solid darken($color-yellow, 5);
     border-radius: 3px;
     font-family: $font-sans-serif;
+    margin: 0 0 10px;
     padding: 10px;
-    margin: 0 0 10px 0;
 }

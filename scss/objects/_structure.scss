@@ -1,38 +1,105 @@
-/**
- * Reusable structure related classes
- */
-
-.float-left {
-    float: left;
-}
-.float-right {
-    float: right;
-}
-.display-inline {
-    display: inline;
-}
-.margin-l-20 {
-    margin-left: 20px;
-}
-.margin-b-20 {
-    margin-bottom: 20px;
-}
-.margin-r-l-20 {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.border-0 {
-    border-width: 0;
-}
-
-/**
- * Main block
- */
-
+// Main block
 .wrap {
     @include breakpoint(min-xxl) {
         width: 1660px;
     }
+
     margin: 0;
     max-width: 100%;
+}
+
+// Reusable classes
+
+// Floats
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+// Displays
+.di {
+    display: inline;
+}
+
+.db {
+    display: block;
+}
+
+// Positions
+.por {
+    position: relative;
+}
+
+.poa {
+    position: absolute;
+}
+
+.pof {
+    position: fixed;
+}
+
+.pos {
+    position: static;
+}
+
+// Margins
+.mt {
+    margin-top: $omni-value-half;
+}
+
+.mr {
+    margin-right: $omni-value-half;
+}
+
+.mb {
+    margin-bottom: $omni-value-half;
+}
+
+.ml {
+    margin-left: $omni-value-half;
+}
+
+.mrl {
+    margin-left: $omni-value-half;
+    margin-right: $omni-value-half;
+}
+
+.mtb {
+    margin-bottom: $omni-value-half;
+    margin-top: $omni-value-half;
+}
+
+// Paddings
+.pt {
+    padding-top: $omni-value-half;
+}
+
+.pr {
+    padding-right: $omni-value-half;
+}
+
+.pb {
+    padding-bottom: $omni-value-half;
+}
+
+.pl {
+    padding-left: $omni-value-half;
+}
+
+.prl {
+    padding-left: $omni-value-half;
+    padding-right: $omni-value-half;
+}
+
+.ptb {
+    padding-bottom: $omni-value-half;
+    padding-top: $omni-value-half;
+}
+
+// Borders
+.b-0 {
+    border-width: 0;
 }

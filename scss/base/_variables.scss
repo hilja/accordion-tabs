@@ -1,35 +1,36 @@
-/**
- * Colors
- */
-
+// Greens
+$color-green-bright:  #3fc;    // Green in the header
+$color-green-light:   #9ff;    // Green in the body
+$color-green-dark:    #2fc7c7; // Darker green for some linkss
+// Reds
+$color-red:           #f00;
+$color-pink:          #ff9fa7;
+$color-pink-light:    lighten($color-pink, 10);
+$color-pink-dark:     darken($color-pink, 10);
 // Greys
-$color-black:         #000;
-$color-black-light:   #333;
+$color-black-black:   #000;
+$color-black:         #333;
 $color-grey-dark:     #666;
 $color-grey:          #888;
 $color-grey-light:    #aaa;
 $color-grey-lighter:  #ddd;
 $color-grey-lightest: #eee;
 $color-white:         #fff;
+// Yeallows
+$color-yellow:        #ff0;
+$color-yellow-light:  #f8fb64;
+// Blues
+$color-blue:          #2693ff;
+$color-blue-light:    #73a4ff;
+$color-blue-dark:     #0332bb;
 
-// Other colors
-$color-red:          #ff0000;
-$color-red2:         #ff6363;
-$color-pink:         Pink;
-$color-blue:         Blue;
-$color-yellow:       Yellow;
-$color-yellow-light: LightYellow;
+// Measurements
+$omni-value:          40px;
+$omni-value-half:     $omni-value / 2;
+$omni-value-third:    $omni-value / 3;
+$omni-value-fourth:   $omni-value / 4;
 
-/**
- * Measurements
- */
-
-$omni-value: 40px;
-
-/**
- * Fonts
- */
-
-$font-monospace: Monaco, 'Andale Mono', 'Courier New', 'Courier', monospace;
-$font-sans-serif: sans-serif;
-$font-serif: Georgia, Times, 'Times New Roman', serif;
+// Font stacks
+$font-monospace:      Monaco, 'Andale Mono', 'Courier New', 'Courier', monospace;
+$font-sans-serif:     sans-serif;
+$font-serif:          Georgia, Times, 'Times New Roman', serif;

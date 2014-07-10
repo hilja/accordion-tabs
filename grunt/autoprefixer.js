@@ -1,11 +1,14 @@
 // autoprefixer
 // https://github.com/nDmitry/grunt-autoprefixer
 module.exports = {
+    options: {
+        browsers: ['last 2 version']
+    },
     single_file: {
         options: {
-            // Target-specific options go here
             map: true
         },
         src: 'css/style.css',
-    }
+        dest: 'css/style.css'
+    },
 };

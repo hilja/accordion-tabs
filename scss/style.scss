@@ -1,128 +1,31 @@
-/* ==========================================================================
-   Frameworks and utilities
-   ========================================================================== */
+// External libraries and packages
+@import 'bourbon';
+@import 'neat';
+@import 'bower_components/scut/dist/scut';
 
-@import "bourbon";
-@import "neat";
-@import "bower_components/scut/dist/scut";
+// Base
+@import 'base/variables';
+@import 'base/mixins';
+@import 'lib/normalize-css/normalize';
+@import 'base/boilerplate-base-styles';
+@import 'base/base';
 
-/* ==========================================================================
-   /scss/base
-   ========================================================================== */
+// Objects
+@import 'objects/links';
+@import 'objects/typo';
+@import 'objects/structure';
+@import 'objects/navigation';
+@import 'objects/metadata';
+@import 'objects/lists';
+@import 'objects/forms';
+@import 'objects/buttons';
+@import 'objects/images';
+@import 'objects/misc';
 
-/**
- * Varible and mixins
- */
+// Vendor
+// @import 'helpers/prism';
+// @import 'helpers/_boilerplate-helper-classes';
+@import 'helpers/_browsehappy';
 
-@import "base/variables";
-@import "base/mixins";
-
-/**
- * Normalize
- */
-
-@import "base/_normalize";
-
-/**
- * Boilerplate base styles, the first part of the boilerplate
- * second part is loaded later
- */
-
-@import "base/_boilerplate-base-styles";
-
-/**
- * My personal base styles
- */
-
-@import "base/_base-styles";
-
-/* ==========================================================================
-   /scss/objects
-   ========================================================================== */
-
-/**
- * links
- */
-
-@import "objects/_links";
-
-/**
- * Typo
- */
-
-@import "objects/_typo";
-
-/**
- * Structure
- */
-
-@import "objects/_structure";
-
-/*
- * Main navigation
- */
-
-@import "objects/_navigation";
-
-/**
- * Metadata
- */
-
-@import "objects/_metadata";
-
-/**
- * Lists
- */
-
-@import "objects/_lists";
-
-/**
- * Form Elements
- */
-
-@import "objects/_forms";
-@import "objects/_buttons";
-
-/**
- * Images
- */
-
-@import "objects/_images";
-
-/**
- * Misc.
- */
-
-@import "objects/_misc";
-
-/* ==========================================================================
-   /scss/vendor
-   ========================================================================== */
-
-/**
- * Prism syntax highlighter
- */
-
-//@import "vendor/_prism-classic";
-
-/* ==========================================================================
-   /scss/helpers
-   ========================================================================== */
-
-/**
- * Boilerplate helper classes
- */
-
-//@import "helpers/_boilerplate-helper-classes";
-
-/**
- * Browserhappy
- */
-
-@import "helpers/_browsehappy";
-
-/* ==========================================================================
-   /scss/print
-   ========================================================================== */
-
-//@import "print/_print";
+// Print
+// @import 'print/_print';

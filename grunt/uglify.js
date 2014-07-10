@@ -1,10 +1,12 @@
 // uglify
 module.exports = {
-    options: {
-        sourceMap: true
-    },
     build: {
-        src: 'js/main.js',
-        dest: 'js/main.min.js'
+        options: {
+            sourceMap: true,
+        },
+        files: {
+            'js/build/global.min.js': ['js/build/global.js'],
+            'lib/jquery/jquery.min.js': ['lib/jquery/jquery.js'],
+        },
     }
 };

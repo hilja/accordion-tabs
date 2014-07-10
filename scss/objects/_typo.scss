@@ -1,17 +1,9 @@
-/**
- * Custom fonts
- */
-
-//@include scut-font-face("Museo100", "../fonts/museo/exljbris_-_museosans-100-webfont");
-//@include scut-font-face("Museo300", "../fonts/museo/exljbris_-_museosans-300-webfont", bold);
-
-/**
- * Non reusable classes
- */
+// Possible custom fonts
+// @include scut-font-face("Museo100", "../fonts/museo/exljbris_-_museosans-100-webfont");
+// @include scut-font-face("Museo300", "../fonts/museo/exljbris_-_museosans-300-webfont", bold);
 
 p {
     //@include font-size(36px);
-    //text-shadow: 1px 1px rgba($color-black, 0.5);
 }
 
 // Other typo styling
@@ -29,30 +21,38 @@ blockquote {
 .sans-serif {
     font-family: $font-sans-serif;
 }
+
 small,
 .font-small {
     font-size: 85%;
 }
+
 .font-medium {
     font-size: 90%;
 }
+
 .font-large {
     font-size: 125%;
 }
+
 .center {
     text-align: center;
 }
+
 .color-black {
     color: $color-black;
 }
+
 .color-red,
 .highlight {
     color: $color-red;
 }
+
 .color-grey,
 .dehighlight {
     color: $color-grey;
 }
+
 .color-white {
     color: $color-white;
 }

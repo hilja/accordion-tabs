@@ -1,3 +1,16 @@
-/**
- * Table styles
- */
+table {
+    margin-bottom: $omni-value / 2;
+    
+    td,
+    th,
+    tr {
+        border-color: $color-white;
+        border-style: solid;
+        border-width: 1px;
+        padding: $omni-value / 3;
+    }
+    
+    th {
+        background: rgba($color-white, .4);
+    }
+}

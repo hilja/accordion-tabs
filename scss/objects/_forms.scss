@@ -2,17 +2,19 @@
 input,
 textarea,
 select {
-    outline: 0;
     margin: 0;
+    outline: 0;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="phone"], 
 textarea {
-    -webkit-appearance:none;
-    -webkit-focus-ring-color:none;
+    -webkit-appearance: none;
+    -webkit-focus-ring-color: none;
 }
+
 input[type="button"],
 input[type="radio"],
 input[type="checkbox"],
@@ -21,6 +23,7 @@ button,
 select:hover {
     cursor: pointer;
 }
+
 input,
 textarea {
     @include input-placeholder {

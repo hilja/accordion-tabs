@@ -8,5 +8,3 @@ default:
     - 'newer:jshint'
     - 'newer:uglify'
     - 'newer:imageoptim'
-    # - 'usebanner'
-    # - 'livereload'
