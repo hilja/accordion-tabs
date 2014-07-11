@@ -1,20 +1,23 @@
 {
-    "name": "Static Site Grunt Starter Template",
-    "version": "0.1",
-    "homepage": "http://clubmate.fi/perfect-grunt-setup",
-    "authors": [
-        "Antti Hiljá"
-    ],
-    "description": "Just a simple Grunt based website starter template",
-    "main": "ondex.html",
-    "keywords": [
-        "CSS",
-        "template",
-        "starter"
-    ],
-    "license": "MIT",
-    "dependencies": {
-        "scut": "latest",
-        "normalize-css": "latest"
-    }
+  "name": "Static Site Grunt Starter Template",
+  "version": "0.1",
+  "homepage": "http://clubmate.fi/perfect-grunt-setup",
+  "authors": [
+    "Antti Hiljá"
+  ],
+  "description": "Just a simple Grunt based website starter template",
+  "main": "ondex.html",
+  "keywords": [
+    "CSS",
+    "template",
+    "starter"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "scut": "latest",
+    "normalize-css": "latest"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.1"
+  }
 }

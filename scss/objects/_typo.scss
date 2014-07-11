@@ -4,6 +4,15 @@
 
 p {
     //@include font-size(36px);
+    margin-bottom: $omni-value-half;
+    &:last-child {
+        // margin-bottom: 0;
+    }
+}
+
+h1,
+h2 {
+    margin-bottom: $omni-value-half;
 }
 
 // Other typo styling
