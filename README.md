@@ -1,42 +1,9 @@
-# static-grunt-template
+# Tab / accordion demo
 
-Just a starter template
+Tabs on wide screens, accordion on small.
 
-## Install
+Uses mostly just CSS. JS does only two things: adds and removes an attribute.
 
-```
-$ git clone https://github.com/hilja/static-grunt-template.git
-```
+Have a look in the `scss/objects/_navigation.scss` all the good stuff is there. And JS is in `js/src/author.js`.
 
-Even better, if you use Sublime Text, install [Fetch][2] package and slap the clone URL there and you're up an running literally in seconds!
-
-Then run:
-
-```
-$ npm install
-$ bower install
-$ grunt
-```
-
-And then watch it:
-
-```
-$ grunt watch
-```
-
-And spin up server using [http-server][1] (install it globally first):
-
-And then watch it:
-
-```
-$ grunt watch
-```
-
-And spin up server using [http-server][1] (install it globally first):
-
-```
-$ http-server
-```
-
-[1]: https://www.npmjs.org/package/http-server 
-[2]: https://sublime.wbond.net/packages/Nettuts%2B%20Fetch
+Works in Chrome, FF, Safari and IE9.
