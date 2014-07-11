@@ -19,24 +19,31 @@
         <!-- Modernizr, other scripts are in footer -->
         <script src="js/lib/modernizr-build.js"></script>
     </head>
-    <body>
+    <body class="tab-accordion">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="wrap">
             
             <!-- Code here -->
-            <h1>Accordion / Tab demo</h1>
+            <h1>Tab experiments</h1>
             
-            <p>
-                Accordion on small screens, tabs on large.
-            </p>
+            <nav>
+                <a class="nav1 pr" class="pr" href="/">Accordion Tabs</a>
+                <a class="nav2"  href="/tabs.html">Vertical Tabs</a>
+            </nav>
+
+            <h2>
+                Tabs fold to accordion on small screens
+            </h2>
 
             <div class="tab-wrap">
                 
-                <details open>
-                    <summary>First thing</summary>
-                    <div class="detail-wrap">
+                <details class="tab-acc-details" open>
+                    <summary class="tab-acc-details__summary">
+                        First thing
+                    </summary>
+                    <div class="detail-content-wrap">
                         <h2>Lorem ipsum</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex libero, temporibus aperiam velit ea consectetur illum voluptatem cumque esse consequuntur dolorem nostrum, modi laborum, molestiae suscipit. Impedit, neque, voluptates!
@@ -44,9 +51,11 @@
                     </div>
                 </details>
                 
-                <details>
-                    <summary>Second thing</summary>
-                    <div class="detail-wrap">
+                <details class="tab-acc-details">
+                    <summary class="tab-acc-details__summary">
+                        Second thing
+                    </summary>
+                    <div class="detail-content-wrap">
                         <h2>Dolor sit amet</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex libero, temporibus aperiam velit ea consectetur illum voluptatem cumque esse consequuntur dolorem nostrum, modi laborum, molestiae suscipit. Impedit, neque, voluptates!
@@ -54,9 +63,11 @@
                     </div>
                 </details>
                 
-                <details>
-                    <summary>Third thing</summary>
-                    <div class="detail-wrap">
+                <details class="tab-acc-details">
+                    <summary class="tab-acc-details__summary">
+                        Third thing
+                    </summary>
+                    <div class="detail-content-wrap">
                         <h2>Consectetur adipisicing</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex libero, temporibus aperiam velit ea consectetur illum voluptatem cumque esse consequuntur dolorem nostrum, modi laborum, molestiae suscipit. Impedit, neque, voluptates!

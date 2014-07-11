@@ -68,15 +68,18 @@ h5,
 h6,
 hgroup,
 hr,
+nav,
 ol,
 p,
 pre,
 table,
 ul {
-    margin: 0 0 $omni-value;
+    margin: 0 0 $omni-value-half;
 }
 
 // Margin overrides
-.detail-wrap {
+.detail-content-wrap,
+.detail-content-wrapper,
+.tab-wrap {
     margin: 0;
 }

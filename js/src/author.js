@@ -9,6 +9,8 @@ $(document).ready(function() {
      * time, and that it scales down to non supportive browsers.
      */
 
+    // var $details = $('.tab-acc-details'),
+        // $summary = $('.tab-acc-details__summary');
     var $details = $('details'),
         $summary = $('summary');
     $summary.on('click', function() {

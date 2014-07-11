@@ -6,7 +6,7 @@ $tab-height: 50px;
     position: relative;
 }
 
-.detail-wrap {
+.detail-content-wrap {
     background: $color-grey-light;
     padding: $omni-value-half;
     
@@ -17,12 +17,12 @@ $tab-height: 50px;
     }
 }
 
-details {
+.tab-acc-details {
     &[open] summary {
         background: $color-grey-light;
         border-bottom-color: $color-grey-light;
     }
-    
+
     &:first-child {
         summary {
             border-left-width: 0;
@@ -30,7 +30,7 @@ details {
     }
 }
 
-summary {
+.tab-acc-details__summary {
     background: $color-grey-lighter;
     border-color: $color-white;
     border-style: solid;
@@ -59,13 +59,13 @@ summary {
         display: none;
     }
     
-    details {
+    .tab-acc-details {
         &[open] .detail-wrap {
             display: block;
         }
     }
     
-    summary {
+    .tab-acc-details__summary {
         padding-left: $omni-value;
         position: relative;
     
@@ -87,8 +87,8 @@ summary {
         }
     }
     
-    details {
-        &[open] summary {
+    .tab-acc-details {
+        &[open] .tab-acc-details__summary {
             &:after {
                 // Change the tirngle to point down when open
                 content: '\25BC '; // Down triangle
