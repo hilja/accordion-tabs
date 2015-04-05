@@ -1,8 +1,9 @@
-# Acordion tabs
+# Accordion tabs
 
 Tab experiments: tabs that fold into an accordion on small screens. Uses mostly just CSS. JS only adds and removes an attribute.
 
-See demo [here][1]
+- See demo [here][demo].
+- Read more about it from this [blog post].
 
 There's a bit of infrastructure in the demo but you'll find the good stuff on following files:
 
@@ -22,4 +23,5 @@ If you wish to run the demo on your machine:
 2. `$ cd tabs-accordion`
 2. `$ npm install`
 
-[1]: http://clubmate.fi/examples/tabs-accordion/
+[demo]: http://demo.clubmate.fi/accordion-tabs/
+[blog post]: http://clubmte.fi/simple-responsive-library-independent-tabbed-navigation
