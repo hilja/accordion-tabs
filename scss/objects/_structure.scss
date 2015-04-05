@@ -8,110 +8,15 @@
     max-width: 100%;
 }
 
-.vertical-tabs {
-    .nav2 {
-        color: $color-red !important;
+// Navigation
+nav {
+    a:first-child {
+        margin-right: 20px;
     }
 }
 
-.tab-accordion {
-    .nav1 {
-        color: $color-red !important;
-    }
-}
-
-// Reusable classes
-
-// Floats
-.fl {
-    float: left;
-}
-
-.fr {
-    float: right;
-}
-
-// Displays
-.di {
-    display: inline;
-}
-
-.db {
-    display: block;
-}
-
-// Positions
-.por {
-    position: relative;
-}
-
-.poa {
-    position: absolute;
-}
-
-.pof {
-    position: fixed;
-}
-
-.pos {
-    position: static;
-}
-
-// Margins
-.mt {
-    margin-top: $omni-value-half;
-}
-
-.mr {
-    margin-right: $omni-value-half;
-}
-
-.mb {
-    margin-bottom: $omni-value-half;
-}
-
-.ml {
-    margin-left: $omni-value-half;
-}
-
-.mrl {
-    margin-left: $omni-value-half;
-    margin-right: $omni-value-half;
-}
-
-.mtb {
-    margin-bottom: $omni-value-half;
-    margin-top: $omni-value-half;
-}
-
-// Paddings
-.pt {
-    padding-top: $omni-value-half;
-}
-
-.pr {
-    padding-right: $omni-value-half;
-}
-
-.pb {
-    padding-bottom: $omni-value-half;
-}
-
-.pl {
-    padding-left: $omni-value-half;
-}
-
-.prl {
-    padding-left: $omni-value-half;
-    padding-right: $omni-value-half;
-}
-
-.ptb {
-    padding-bottom: $omni-value-half;
-    padding-top: $omni-value-half;
-}
-
-// Borders
-.b-0 {
-    border-width: 0;
+.current {
+    border-bottom: 3px solid $color-black;
+    color: #000;
+    padding-bottom: 5px;
 }

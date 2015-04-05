@@ -1,0 +1,100 @@
+// ----
+// The following slab of code is for Chrome, Safari > 7 and Opera, the browsers
+// that support <detail> and <summary> elements.
+// ----
+$tab-height: 50px;
+
+.tab-wrap {
+    position: relative;
+}
+
+.tab {
+    &__content {
+        background: $color-grey-light;
+        padding: $omni-value-half;
+        
+        @include breakpoint(min-s) {
+            left: 0;
+            position: absolute;
+            top: $tab-height;
+        }
+    }
+
+    &__title {
+        background: $color-grey-lighter;
+        border-color: $color-white;
+        border-style: solid;
+        border-width: 0 0 1px;
+        cursor: pointer;
+        height: $tab-height;
+        line-height: $tab-height; // Center vertically
+        outline: 0;
+        padding-left: $omni-value-half;
+        
+        @include breakpoint(min-s) {
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            border-width: 0 0 1px 1px;
+            float: left;
+            width: 33.33333%;
+        }
+    }
+
+    &[open] .tab__title {
+        background: $color-grey-light;
+        border-bottom-color: $color-grey-light;
+    }
+
+    &:first-child {
+        .tab__title {
+            border-left-width: 0;
+        }
+    }
+}
+
+// ----
+// This is for Firefox and IE.
+// `.no-detail` class comes from Modernizr
+// ----
+.no-details {
+    .tab {
+        .tab__title {
+            padding-left: $omni-value;
+            position: relative;
+        
+            &:after {
+                content: '\25B6 '; // Right triangle, could use CSS triange here also
+                display: block;
+                font-size: 75%;
+                left: $omni-value-half;
+                position: absolute;
+                top: 3px;
+            }
+
+            @include breakpoint(min-s) {
+                &:after {
+                    display: none;
+                }
+                
+                padding-left: $omni-value-half;
+            }
+        }
+
+        &__content {
+            display: none;
+        }
+
+        &[open] .tab__content {
+            display: block;
+        }
+
+        &[open] .tab__title {
+            &:after {
+                // Change the tirngle to point down when open
+                content: '\25BC '; // Down triangle
+            }
+        }
+    }
+}

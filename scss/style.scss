@@ -1,19 +1,18 @@
-// External libraries and packages
-@import 'bourbon';
-@import 'neat';
-@import 'bower_components/scut/dist/scut';
+// External libraries
+@import 'scss/lib/scut';
 
 // Base
 @import 'base/variables';
 @import 'base/mixins';
 @import 'lib/normalize-css/normalize';
-@import 'base/boilerplate-base-styles';
 @import 'base/base';
 
-// Objects
+// Accordions
+@import 'objects/accordion-tabs';
+@import 'objects/accordion-tabs-vertical';
+
+// Other, not so relevant, styling
 @import 'objects/links';
 @import 'objects/typo';
 @import 'objects/structure';
-@import 'objects/tab-accordion';
-@import 'objects/vertical-tabs';
 @import 'objects/images';

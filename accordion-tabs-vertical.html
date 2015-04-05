@@ -1,25 +1,23 @@
-<!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
     <head>
         <!-- Meta stuff -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <!-- Title -->
-        <title>Simple starter termplate</title>
+        <title>Tab experiments</title>
         
         <!-- More meta stuff -->
-        <meta name="description" content="">
+        <meta name="description" content="A simple stydy on tab navigation in the web">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         
-        <!-- Modernizr, other scripts are in footer -->
+        <!-- Modernizr -->
         <script src="js/lib/modernizr-build.js"></script>
     </head>
-    <body class="vertical-tabs">
+
+    <body class="root-vertical-tabs">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -29,39 +27,40 @@
             <h1>Tab experiments</h1>
             
             <nav>
-                <a class="nav1 pr" href="index.html">Accordion Tabs</a>
-                <a class="nav2" href="tabs.html">Vertical Tabs</a>
+                <a class="pr" href="index.html">Accordion tabs</a>
+                <a class="current" href="accordion-tabs-vertical.html">Vertical accordion tabs</a>
             </nav>
 
             <h2>
-                Vertical tabs
+                Vertical tabs fold to accordion on small screens
             </h2>
+
+            <p>
+                The tabs "sidebar" scales to the height of the content.
+            </p>
 
             <div class="tab-wrap clearfix">
                 
-                <details class="ver-tabs-details" open>
-                    <summary class="ver-tabs-details__summary">
+                <details class="tab-vertical" open>
+                    <summary class="tab-vertical__title">
                         First thing
                     </summary>
-                    <div class="detail-content-wrapper">
+                    <div class="tab-vertical__content">
                         <h2>Lorem ipsum</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque laborum iste modi tempore blanditiis voluptatum dolore qui omnis nulla obcaecati repellendus doloribus, in, labore quidem consequuntur laboriosam id aperiam minima dolor ad incidunt consectetur.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque laborum iste modi tempore blanditiis voluptatum dolore qui omnis nulla obcaecati repellendus doloribus.
                         </p>
                         <p>
                             Explicabo incidunt, aliquid, dignissimos consectetur quia ratione, officiis cumque excepturi aspernatur error ex qui ullam dicta quidem maiores minus? Repudiandae aut corporis iste quia, ea voluptatem eos! Minima numquam magnam, nesciunt similique voluptas veniam odit eveniet tempora. Eos ipsum quasi velit. Totam numquam similique temporibus saepe autem sapiente, eaque alias fuga quasi consequuntur.
                         </p>
-                        <p>
-                            Fugit rerum animi optio, similique unde amet officia labore ullam laboriosam, illo provident minima ab! Laboriosam iure aliquid natus molestias dolorum nesciunt officiis officia, quasi qui nulla quaerat dicta nam, quia, reiciendis quo nisi architecto provident quos culpa iste vitae nihil saepe a. Nesciunt, atque, et? Eos voluptatum optio, molestiae vitae est voluptate deserunt, commodi, accusamus quaerat dolorum voluptas animi quidem non reprehenderit quibusdam deleniti a esse, assumenda impedit aspernatur enim at facilis doloribus! Rerum et quisquam illum numquam, aspernatur autem esse eum quia in adipisci. Excepturi ipsum voluptatum maiores molestiae dolore quam aliquam dignissimos unde, incidunt perspiciatis nostrum eum quia officiis temporibus! Ipsam placeat commodi esse facilis iure quas hic minima!
-                        </p>
                     </div>
                 </details>
                 
-                <details  class="ver-tabs-details">
-                    <summary class="ver-tabs-details__summary">
+                <details  class="tab-vertical">
+                    <summary class="tab-vertical__title">
                         Second thing
                     </summary>
-                    <div class="detail-content-wrapper">
+                    <div class="tab-vertical__content">
                         <h2>Dolor sit amet</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque laborum iste modi tempore blanditiis voluptatum dolore qui omnis nulla obcaecati repellendus doloribus, in, labore quidem consequuntur laboriosam id aperiam minima dolor ad incidunt consectetur.
@@ -72,11 +71,11 @@
                     </div>
                 </details>
                 
-                <details class="ver-tabs-details">
-                    <summary class="ver-tabs-details__summary">
+                <details class="tab-vertical">
+                    <summary class="tab-vertical__title">
                         Third thing
                     </summary>
-                    <div class="detail-content-wrapper">
+                    <div class="tab-vertical__content">
                         <h2>Consectetur adipisicing</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque laborum iste modi tempore blanditiis voluptatum dolore qui omnis nulla obcaecati repellendus doloribus, in, labore quidem consequuntur laboriosam id aperiam minima dolor ad incidunt consectetur.
@@ -99,7 +98,7 @@
             </div>
 
         <!-- Scripts -->
-        <script src="lib/jquery/jquery.js"></script>
-        <script src="js/build/global.min.js"></script>
+        <script src="js/lib/jquery.js"></script>
+        <script src="js/src/author.js"></script>
     </body>
 </html>

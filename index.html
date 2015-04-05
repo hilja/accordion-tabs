@@ -1,36 +1,31 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
     <head>
         <!-- Meta stuff -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         <!-- Title -->
-        <title>Simple starter termplate</title>
+        <title>Tab experiments</title>
         
         <!-- More meta stuff -->
-        <meta name="description" content="">
+        <meta name="description" content="A simple stydy on tab navigation in the web">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         
-        <!-- Modernizr, other scripts are in footer -->
+        <!-- Modernizr -->
         <script src="js/lib/modernizr-build.js"></script>
     </head>
+
     <body class="tab-accordion">
-        <!--[if lt IE 9]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         <div class="wrap">
             
-            <!-- Code here -->
             <h1>Tab experiments</h1>
             
             <nav>
-                <a class="nav1 pr" class="pr" href="index.html">Accordion Tabs</a>
-                <a class="nav2"  href="tabs.html">Vertical Tabs</a>
+                <a class="current pr" class="pr" href="index.html">Accordion tabs</a>
+                <a href="accordion-tabs-vertical.html">Vertical accordion tabs</a>
             </nav>
 
             <h2>
@@ -39,46 +34,46 @@
 
             <div class="tab-wrap">
                 
-                <details class="tab-acc-details" open>
-                    <summary class="tab-acc-details__summary">
+                <details class="tab" open>
+                    <summary class="tab__title">
                         First thing
                     </summary>
-                    <div class="detail-content-wrap">
+                    <div class="tab__content">
                         <h2>Lorem ipsum</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex libero, temporibus aperiam velit ea consectetur illum voluptatem cumque esse consequuntur dolorem nostrum, modi laborum, molestiae suscipit. Impedit, neque, voluptates!
                         </p>
                     </div>
                 </details>
-                
-                <details class="tab-acc-details">
-                    <summary class="tab-acc-details__summary">
+
+                <details class="tab">
+                    <summary class="tab__title">
                         Second thing
                     </summary>
-                    <div class="detail-content-wrap">
+                    <div class="tab__content">
                         <h2>Dolor sit amet</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex libero, temporibus aperiam velit ea consectetur illum voluptatem cumque esse consequuntur dolorem nostrum, modi laborum, molestiae suscipit. Impedit, neque, voluptates!
+                            Reprehenderit doloremque aliquid eveniet atque in repudiandae ab officiis. Odio omnis eveniet dolores sapiente! Fugiat itaque labore adipisci praesentium reiciendis, non dignissimos tempore modi deleniti nisi ab rem quaerat molestias excepturi voluptatem, dolor a beatae ea vel illo est magnam impedit. Inventore eum beatae eos dignissimos quasi quam distinctio iusto suscipit illum, soluta fuga, recusandae.
                         </p>
                     </div>
                 </details>
                 
-                <details class="tab-acc-details">
-                    <summary class="tab-acc-details__summary">
+                <details class="tab">
+                    <summary class="tab__title">
                         Third thing
                     </summary>
-                    <div class="detail-content-wrap">
+                    <div class="tab__content">
                         <h2>Consectetur adipisicing</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ex libero, temporibus aperiam velit ea consectetur illum voluptatem cumque esse consequuntur dolorem nostrum, modi laborum, molestiae suscipit. Impedit, neque, voluptates!
+                            Minima eaque laudantium. Itaque officiis, quaerat eius provident ad ipsum, laboriosam, sint veniam doloremque ab veritatis? Non nam consequatur quis, atque cupiditate reprehenderit id, commodi earum optio unde qui debitis pariatur voluptas veniam a impedit. Earum numquam adipisci repellendus, reiciendis ipsa dicta tenetur!
                         </p>
                     </div>
                 </details>
-
-            </div>
+            
+            </div><!-- /.tab-wrap -->
 
         <!-- Scripts -->
-        <script src="lib/jquery/jquery.js"></script>
-        <script src="js/build/global.min.js"></script>
+        <script src="js/lib/jquery.js"></script>
+        <script src="js/src/author.js"></script>
     </body>
 </html>

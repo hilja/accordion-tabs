@@ -1,0 +1,86 @@
+// ----
+// The following slab of code is for Chrome, Safari > 7 and Opera, the browsers
+// that support <detail> and <summary> elements.
+// ----
+$tab-height: 50px;
+$tab-width: 300px;
+
+.root-vertical-tabs {
+    .tab-wrap {
+        height: 100%;
+        position: relative;
+    }
+}
+
+.tab-vertical {
+    &__title {
+        background: $color-grey-lighter;
+        //background: $color-pink;
+        border-color: $color-white;
+        border-style: solid;
+        border-width: 0 0 1px;
+        cursor: pointer;
+        height: $tab-height;
+        line-height: $tab-height; // Center vertically
+        outline: 0;
+        padding-left: $omni-value-half;
+
+        @include breakpoint(min-s) {
+            width: $tab-width;
+            
+            &::-webkit-details-marker {
+                display: none;
+            }
+        }
+    }
+
+    &__content {
+        background: $color-grey-light;
+        padding: $omni-value-half;
+
+        @include breakpoint(min-s) {
+            left: $tab-width;
+            position: absolute;
+            top: 0;
+
+            &:after {
+                background: $color-grey-lighter;
+                content: '';
+                display: block;
+                height: 100%;
+                left: -$tab-width;
+                position: absolute;
+                top: 0;
+                width: $tab-width;
+                z-index: -1;
+            }
+        }
+    }
+
+    &[open] .tab-vertical__title {
+        background: $color-grey-light;
+        border-bottom-color: $color-grey-light;
+    }
+
+    &:first-child {
+        .tab-vertical__title {
+            border-left-width: 0;
+        }
+    }
+}
+
+// ----
+// This is for Firefox and IE.
+// `.no-detail` class comes from Modernizr
+// ----
+.no-details {
+    .tab-vertical {
+        &__content {
+            display: none;
+        }
+
+        &[open] .tab-vertical__content {
+            display: block;
+        }
+    }
+}

@@ -11,3 +11,4 @@ trash
 Error.log
 *.sublime-project
 *.subline-workspace
+*~

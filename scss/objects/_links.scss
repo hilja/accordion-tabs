@@ -1,9 +1,9 @@
 // Link 1
 a {
-    color: $color-blue;
+    color: $color-grey;
     text-decoration: none;
 
     &:hover {
-        color: $color-red;
+        color: $color-grey-light;
     }
 }

@@ -1,60 +1,23 @@
-/**
- * Reset some of the boilerplate and Normalize values
- * so that it is easy to keep boilerplate and Normalize
- * up to date.
- */
+// ----
+// Reset some of the boilerplate and Normalize values
+// so that it is easy to keep boilerplate and Normalize
+// up to date.
+// ----
+
+// Uniform box sizing
+@include scut-reset-border-box;
 
 html {
-//    font-size: 100%;
     line-height: 1.6;
-}
-
-html,
-button,
-input,
-select,
-textarea { 
-    font-family: $font-sans-serif;
 }
 
 body {
     margin: 20px;
-    // Put the name of the media query :after the body
-    // then read it with JavaScript
-    &:after {
-        display: none;
-    }
-    
-    @include breakpoint(min-s) {
-        &:after {
-            content: 's';
-        }
-    }
-    
-    @include breakpoint(min-m) {
-        &:after {
-            content: 'm';
-        }
-    }
-
-    @include breakpoint(min-l) {
-        &:after {
-            content: 'l';
-        }
-    }
-    
-    @include breakpoint(min-xl) {
-        &:after {
-            content: 'xl';
-        }
-    }
 }
 
-/**
- * Single directional margins thing
- * http://csswizardry.com/2012/06/single-direction-margin-declarations/
- */
-
+// ----
+// Single directional margins
+// ----
 blockquote,
 dd,
 div,
@@ -78,8 +41,8 @@ ul {
 }
 
 // Margin overrides
-.detail-content-wrap,
-.detail-content-wrapper,
-.tab-wrap {
+.tab-wrap,
+.tab__content,
+.tab-vertical__content {
     margin: 0;
 }
