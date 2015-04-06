@@ -1,18 +1,16 @@
 // External libraries
 @import 'scss/lib/scut';
+@import 'lib/normalize';
 
 // Base
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/normalize';
 @import 'base/base';
 
-// Accordions
+// The sauce
 @import 'objects/accordion-tabs';
 @import 'objects/accordion-tabs-vertical';
 
 // Other, not so relevant, styling
-@import 'objects/links';
 @import 'objects/typo';
 @import 'objects/structure';
-@import 'objects/images';

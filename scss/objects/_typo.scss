@@ -1,13 +1,5 @@
-// Possible custom fonts
-// @include scut-font-face("Museo100", "../fonts/museo/exljbris_-_museosans-100-webfont");
-// @include scut-font-face("Museo300", "../fonts/museo/exljbris_-_museosans-300-webfont", bold);
-
 p {
-    //@include font-size(36px);
     margin-bottom: $omni-value-half;
-    &:last-child {
-        // margin-bottom: 0;
-    }
 }
 
 h1,
@@ -23,10 +15,7 @@ blockquote {
     font-style: italic;
 }
 
-/**
- * Reausable classes
- */
-
+// Utilities
 .sans-serif {
     font-family: $font-sans-serif;
 }

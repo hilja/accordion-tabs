@@ -22,3 +22,13 @@ nav {
     color: #000;
     padding-bottom: 2px;
 }
+
+// Links
+a {
+    color: $color-grey;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-grey-light;
+    }
+}

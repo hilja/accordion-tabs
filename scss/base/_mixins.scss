@@ -1,96 +1,10 @@
-/**
- * Input placeholder color
- */
-
-@mixin input-placeholder {
-    &.placeholder { @content; }
-    &:-moz-placeholder { @content; }
-    &::-moz-placeholder { @content; }
-    &:-ms-input-placeholder { @content; }
-    &::-webkit-input-placeholder { @content; } 
-} 
-
-/**
- * rem and em conversion and font size
- */
-
-// Em conversion
-@function calculateEm($size) {
-    $remSize: $size / 16px;
-    @return #{$remSize}em;
-}
-// Rem conversion
-@function calculateRem($size) {
-    $remSize: $size / 16px;
-    @return #{$remSize}rem;
-}
-// Font size mixin
-@mixin font-size($size) {
-    font-size: $size; // Fallback in px
-    font-size: calculateRem($size);
-}
-
-/**
- * Media queries
- * These are based on device widths, lame, I know
- * But, they're converted to ems
- */
-
+// ----
+// Media queries
+// ----
 @mixin breakpoint($point) {
-    @if $point == min-xxl {
-        @media screen and (min-width: calculateEm(1681px)) {
+    @if $point == min-s {
+        @media screen and (min-width: 641px) {
             @content;
-        }
-    }
-    @else if $point == min-xl {
-        @media screen and (min-width: calculateEm(1444px)) {
-            @content;
-        }
-    }
-    @else if $point == min-l {
-        @media screen and (min-width: calculateEm(1025px)) {
-            @content;
-        }
-    }
-    @else if $point == min-m {
-        @media screen and (min-width: calculateEm(800px)) {
-            @content;
-        }
-    }
-    @else if $point == min-s {
-        @media screen and (min-width: calculateEm(641px)) {
-            @content;
-        }
-    }
-    @else if $point == max-s {
-        @media screen and (max-width: calculateEm(649px)) {
-            @content;
-        }
-    }
-}
-
-/**
- * @font-face mixin
- * Taken here: https://github.com/perry/sass-font-face
- * I modifield it to use the SCSS syntax
- */
-
-@mixin font-face($style-name, $file, $family, $category:"") {
-    $filepath: "fonts/" + $family + "/" + $file;
-    @font-face {
-        font-family: "#{$style-name}";
-        src: url($filepath + ".eot");
-        src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf")  format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
-    }
-    %#{$style-name} {
-        font: {
-            @if $category != "" {
-                family: "#{$style-name}", #{$category};
-            }
-            @else {
-                family: "#{$style-name}";
-                weight: normal;
-            }
         }
     }
 }
