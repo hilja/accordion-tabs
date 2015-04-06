@@ -21,7 +21,7 @@ module.exports = {
         ]
     },
     html: {
-        files: ['*.php', '*/**/*.php'],
+        files: ['*.html', '*/**/*.html'],
         options: {
             spawn: false
         }

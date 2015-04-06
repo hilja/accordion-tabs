@@ -24,7 +24,8 @@ for (var i = 0; i < summary.length; i++) {
 }
 
 /**
- * And with jQUery, if that's what rocks your boat.
+ * And with jQuery, if that's what rocks your boat.
+ * NOTE: jQuery is not loaded in the demo.
  */
 // $(document).ready(function() {
 //     var $details = $('details'),
